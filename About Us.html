@@ -1,0 +1,353 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<head>
+<style type=text/css>  
+.header 
+{
+  overflow: hidden;
+  background-color:black;
+  padding: 15px 5px;
+  color:#ddd;
+  float:none;
+  font-size: 75;
+  font-family:fantasy;
+  text-align:center;
+  width:100%; ;
+}
+.header a.logo 
+{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.topnav 
+{
+  overflow: hidden;
+  background-color:darkblue;
+  padding: 5px 2px;
+  width:100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a 
+{
+  float:left;
+  color:white;
+  text-align:justify;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif; 
+  line-height: 20px;
+  border-radius: 10px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover 
+{
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active 
+{
+  background-color: dodgerblue;
+  color: white;
+}
+.dropbtn 
+{
+  background-color: darkblue;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 10px;
+}
+
+.dropdown 
+{
+  float:left;
+  overflow: hidden;
+}
+
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background-color:darkblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a
+{
+  float:none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.dropdown-content a:hover 
+{
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+}
+
+.dropdown:hover .dropbtn 
+{
+background-color: white;
+color:black;
+}
+body
+{
+  background-color:lightskyblue;
+}
+h2
+{
+  color:darkblue;
+  text-align: center;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p
+{
+  color:black;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer
+{
+	position:static;
+	bottom: 0;
+  left:0;
+  right:0;
+}
+.footer-distributed
+{
+  overflow: hidden;
+	background-color: black;
+	box-sizing: border-box;
+	width: 100%;
+  height:30%;
+	text-align: center;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 50px 50px;
+	margin-top: 80px;
+  display:flex;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-right
+{
+	display: inline-block;
+	vertical-align: top;
+}
+.footer-distributed .footer-left
+{
+	width: 50%;
+}
+.footer-distributed h3
+{
+	color: white;
+	font: normal 36px, cursive;
+	margin: 0;
+}
+.footer-left p
+{
+  margin:2px;
+  padding: 1px;
+  color:aliceblue;
+}
+.footer-distributed .footer-right
+{
+	width: 50%;
+}
+.fa
+{
+  font-size: 30px;
+  width: 30px;
+  text-decoration: none;
+}
+.fa-twitter
+{
+  color: rgb(28, 150, 232);
+}
+.fa-whatsapp
+{
+  color: rgb(69, 198, 85);
+}
+.fa-instagram
+{
+  color: rgb(246, 1, 140);
+}
+.fa-linkedin
+{
+  color: rgb(28, 150, 232);
+}
+.fa-pinterest-p
+{
+  color: rgb(230, 0,35);
+}
+.fa-facebook-official
+{
+  color: rgb(66, 103, 178);
+}
+.fa-phone
+{
+  color:aliceblue;
+}
+.fa-envelope
+{
+  color:aliceblue;
+}
+.column 
+{
+  float: left;
+  width: 20%;
+  padding: 0 30px;
+}
+.row 
+{
+  margin-left: 45px;
+  margin-right: 2px;
+}
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+.card
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+.title 
+{
+  color: grey;
+  font-size: 18px;
+}
+.test 
+{
+   display: flex;
+    flex-direction: row;  
+}
+.card .container 
+{
+  padding: 2px 14px;
+}
+@media only screen and (max-width:500px) 
+{
+  /* For mobile phones: */
+  .header, .topnav, .body, .footer, .card, .column, .row,.container 
+  {
+    width: 100%;
+  }
+}
+</style>
+  <div class="header">
+    <img src="images/logo1.jpeg" height="150px" width="150px" class="logo"><center>The Artsy Lens</center>
+  </div>
+    <div class="topnav">
+      <a href="index.html" class="w3-button w3-bar-item">Home</a>
+      <a href="About Us.html" class="w3-button w3-bar-item">About Us</a>
+      <div class="dropdown">
+      <button class="dropbtn">Courses</button>
+      <div class="dropdown-content">
+        <a href="Product Photography.html">Product Photography</a>
+        <a href="Wildlife Photography.html">Wildlife Photography</a>
+        <a href="Sports Photography.html">Sports Photography</a>
+        <a href="Editorial Photography.html">Editorial Photography</a>
+        <a href="Fashion Photography.html">Fashion Photography</a>
+        <a href="Wedding Photography.html">Wedding Photography</a>
+        <a href="Portrait Photography.html">Portrait Photography</a>
+        <a href="Travel Photography.html">Travel Photography</a>
+      </div>
+      </div>
+      <a href="activities.html" class="w3-button w3-bar-item">Activities</a>
+      <a href="Privacy Policy.html" class="w3-button w3-bar-item">Privacy Policy</a>
+      <a href="Terms and Conditions.html" class="w3-button w3-bar-item">Terms and Conditions</a>
+    </div>
+</head>
+<body>
+<section class= style="max-width:600px">
+<h2>About Us</h2>
+<p style=" margin-left: 20%;
+margin-right: 20%;"><i>Established in 2010, the Artsy Lens institute is one of the finest institutes in Pune. Our institute is government-authorized and has international recognition standards. We provide our students great training in better infrastructure and environment so that they can grow their skills. The Artsy Lens institute is the best institute as we provide many creative courses with best faculty and modern infrastructure. We make sure, the students are encouraged and are immersed in a world of creativity.
+</i></p>
+<h2>Our Vision</h2>
+<p style=" margin-left: 20%;
+margin-right: 20%;"><i>We empower the youth with an employable skill-set enabling them to become self-sustained and a contributing member of the society. We strive to better ourselves consistently in order to be the flag-bearer in the field of multimedia and entertainment. Our motto is Dream, Learn, and Create.
+Join The Artsy Lens and gain marketable skills that uniquely qualify you for work on a wide array of projects. You will develop the ability to deliver truthful performances that bring characters to life through technique, emotion, and presence.
+</i></p>
+<h2>Our Mission</h2>
+<p style=" margin-left: 20%;
+margin-right: 20%;"><i>The Artsy Lens believe a creative and successful career awaits you. We have already trained hundreds of aspiring artists. Our aim is to become guidance centre for the prestigious Pulitzer Prize Photography award in India by year 2025, while training thousands of individuals through our online and offline courses this will further help them to put a unique impact on the industry through powerful skills in their own artistic way.
+</i></p>
+<h2>Faculty Information</h2>
+<div class="test">
+<div class="card">
+  <img src="images/Atul_Kasbekar.jpg" alt="Atul" style="width: 100%;">
+  <div class="container">
+  <h1>Atul Kasbekar</h1>
+  <p class="title">Photographer</p>
+  <p>Atul Kasbekar is an Indian fashion photographer and Bollywood film producer. He is recognised for his Kingfisher calendar shoots. Kasbekar is the first Indian to win the prestigious International Food and Beverage Creative Excellence Awards (FAB Awards) 2005, held at London, for his work on Kingfisher Calendar. He was also the honorary chairman of the Photographer's Guild of India.</p>
+  <p>He took training for over a year in Los Angeles and worked with photographers like Dennis Gray, Ron Slenzak, James B Wood, Jay Silverman, Jay P Morgan, Bill Werts and David Le Bon. In 1991 he started his professional career as a photographer.</p>
+  <p>He is working with our institute since 2015 and has guided many students for shaping their career as a professional photographer.</p>
+  </div>
+</div>
+<div class="card">
+  <img src="images/sudharak_olwe.jpg" alt="sudharak" style="width: 100%;"> 
+  <div class="container">
+    <h1>Sudharak Olwe</h1>
+    <p class="title">Photographer</p>
+    <p>Sudharak Olwe is a Mumbai-based documentary photographer, whose work has been featured in national publications and exhibited in Mumbai, Delhi, Malmo (Sweden), Lisbon, Amsterdam, Los Angeles, Washington and Dhaka.</p>
+    <p>In 2005, he was one of the four awardees for the National Geographic's "All Roads Photography Program". He was awarded Padma Shri, one of India's highest civilian honors for his social work in 2016.</p>
+    <p>He is working with our institute since 2011 and has guided many students for shaping their career as a professional photographer.</p>
+  </div>
+</div>
+</div>
+</section>
+<footer class="footer-distributed">
+<div class="footer-left">
+<h3>Contact Us</h3>
+<div>
+  <i class="fa fa-phone"></i>
+  <p>+91 9876543210</p>
+</div>
+<div>
+  <i class="fa fa-envelope"></i>
+  <p>artsylens@gmail.com</p>
+</div>
+</div>
+<div class="footer-right">
+  <h3>Social Media</h3>
+  <a class="fa fa-facebook-official"></a>
+  <a class="fa fa-instagram"></a>
+  <a class="fa fa-twitter"></a>
+  <a class="fa fa-whatsapp"></a>
+  <a class="fa fa-pinterest-p"></a>
+  <a class="fa fa-linkedin"></a>
+</div>
+</footer>
+</body>
+</html>

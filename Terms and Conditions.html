@@ -1,0 +1,331 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<head>
+<style type=text/css> 
+.header 
+{
+  overflow: hidden;
+  background-color:black;
+  padding: 15px 5px;
+  color:#ddd;
+  float:none;
+  font-size: 75;
+  font-family:fantasy;
+  text-align:center;
+  width:100%; ;
+}
+
+
+.header a.logo 
+{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.topnav 
+{
+  overflow: hidden;
+  background-color:darkblue;
+  padding: 5px 2px;
+  width:100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a 
+{
+  float:left;
+  color:white;
+  text-align:justify;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif; 
+  line-height: 20px;
+  border-radius: 10px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover 
+{
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active 
+{
+  background-color: dodgerblue;
+  color: white;
+}
+.dropbtn 
+{
+  background-color: darkblue;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 10px;
+}
+
+.dropdown 
+{
+  float:left;
+  overflow: hidden;
+}
+
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background-color:darkblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a 
+{
+  float:none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.dropdown-content a:hover 
+{
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+}
+
+.dropdown:hover .dropbtn 
+{
+background-color: white;
+color:black;
+}
+body
+{
+  background-color:lightskyblue;
+}
+h2
+{
+  color:darkblue;
+  text-align: center;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p
+{
+  color:black;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+footer
+{
+	position:static;
+	bottom: 0;
+  left:0;
+  right:0;
+}
+.footer-distributed
+{
+  overflow: hidden;
+	background-color: black;
+	box-sizing: border-box;
+	width: 100%;
+  height:30%;
+	text-align: center;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 50px 50px;
+	margin-top: 80px;
+  display:flex;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-right
+{
+	display: inline-block;
+	vertical-align: top;
+}
+.footer-distributed .footer-left
+{
+	width: 50%;
+}
+.footer-distributed h3
+{
+	color: white;
+	font: normal 36px, cursive;
+	margin: 0;
+}
+.footer-left p
+{
+  margin:2px;
+  padding: 1px;
+  color:aliceblue;
+}
+.footer-distributed .footer-right
+{
+	width: 50%;
+}
+.fa
+{
+  font-size: 30px;
+  width: 30px;
+  text-decoration: none;
+}
+.fa-twitter
+{
+  color: rgb(28, 150, 232);
+}
+.fa-whatsapp
+{
+  color: rgb(69, 198, 85);
+}
+.fa-instagram
+{
+  color: rgb(246, 1, 140);
+}
+.fa-linkedin
+{
+  color: rgb(28, 150, 232);
+}
+.fa-pinterest-p
+{
+  color: rgb(230, 0,35);
+}
+.fa-facebook-official
+{
+  color: rgb(66, 103, 178);
+}
+.fa-phone
+{
+  color:aliceblue;
+}
+.fa-envelope
+{
+  color:aliceblue;
+}
+.column 
+{
+  float: left;
+  width: 20%;
+  padding: 0 30px;
+}
+.row 
+{
+  margin-left: 45px;
+  margin-right: 2px;
+}
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (max-width:500px) 
+{
+  /* For mobile phones: */
+  .header, .topnav, .body, .footer, .column, .row, .container 
+  {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <img src="images/logo1.jpeg" height="150px" width="150px" class="logo"><center>The Artsy Lens</center>
+  </div>
+    <div class="topnav">
+      <a href="index.html" class="w3-button w3-bar-item">Home</a>
+      <a href="About Us.html" class="w3-button w3-bar-item">About Us</a>
+      <div class="dropdown">
+      <button class="dropbtn">Courses</button>
+      <div class="dropdown-content">
+        <a href="Product Photography.html">Product Photography</a>
+        <a href="Wildlife Photography.html">Wildlife Photography</a>
+        <a href="Sports Photography.html">Sports Photography</a>
+        <a href="Editorial Photography.html">Editorial Photography</a>
+        <a href="Fashion Photography.html">Fashion Photography</a>
+        <a href="Wedding Photography.html">Wedding Photography</a>
+        <a href="Portrait Photography.html">Portrait Photography</a>
+        <a href="Travel Photography.html">Travel Photography</a>
+      </div>
+      </div>
+      <a href="activities.html" class="w3-button w3-bar-item">Activities</a>
+      <a href="Privacy Policy.html" class="w3-button w3-bar-item">Privacy Policy</a>
+      <a href="Terms and Conditions.html" class="w3-button w3-bar-item">Terms and Conditions</a>
+    </div>
+
+
+<center><h1>TERMS AND CONDITIONS OF USAGE</h1></center>
+
+<p>1.These Terms apply to all your activities on our website, our Application Program Interface(“API’s”), and other related services (“Services”). Our mission is to impart quality instruction in the field of the design domain. We enable anyone anywhere to learn the practice of design.</p>
+<p>2.You need an account for most activities on our platform. Keep your password somewhere safe, because you’re responsible for all activity associated with your account. If you suspect someone else is using your account, let us know by contacting us.</p>
+<p>3.You need an account for most activities on our platform, including to purchase and access content or to submit content for publication. When setting up and maintaining your account, you must provide and continue to provide accurate and complete information, including a valid email address. You have complete responsibility for your account and everything that happens on your account, including for any harm or damage (to us or anyone else) caused by someone using your account without your permission. This means you need to be careful with your password. You may not transfer your account to someone else or use someone else’s account. If you contact us to request access to an account, we will not grant you such access unless you can provide us with the information that we need to prove you are the owner of that account. In the event of the death of a user, the account of that user will be terminated.</p>
+<p>4.You may not share your account login credentials with anyone else. You are responsible for what happens with your account. You must notify us immediately upon learning that someone else may be using your account without your permission (or if you suspect any other breach of security) by contacting us. We may request some information from you to confirm that you are indeed the owner of your account.</p>
+<p>5.When you enroll in a course or other content, you get a one year license from us to view it and for no other use. You are not allowed to transfer or resell content in any way.  We grant you (as a student) a limited, non-exclusive, non-transferable one year license to access and view the content for which you have paid all required fees, solely for your personal, non-commercial, educational purposes through the Services, in accordance with these Terms and any conditions or restrictions associated with the particular content or feature of our Services. All other uses are expressly prohibited. You may not reproduce, redistribute, transmit, assign, sell, broadcast, rent, share, lend, modify, adapt, edit, create derivative works of, sublicense, or otherwise transfer or use any content unless we give you explicit permission to do so in a written agreement signed by our authorized representative. This also applies to content you can access via any of our APIs.</p>
+<p>6.We give a one year access license to our students when they enroll in a course or other content. However, we reserve the right to revoke any license to access and use any content at any point in time in the event where we decide or are obligated to disable access to the content due to legal or policy reasons, for example, if the course or other content you enrolled in is the object of a copyright complaint, or if we determine it violates our guidelines. This one year license access license does not apply to enrollments via Subscription Plans or to add-on features and services associated with the course or other content you enroll in.</p>
+<p>7.You agree to pay the fees for content that you purchase, and you authorize us to charge your debit or credit card or process other means of payment. We work with payment service providers to offer you the most convenient payment methods and to keep your payment information secure. We may update your payment methods using information provided by our payment service providers.</p>
+<p>8.When you make a purchase, you agree not to use an invalid or unauthorized payment method. If your payment method fails and you still get access to the content you are enrolling in, you agree to pay us the corresponding fees within one hour of notification from us. We reserve the right to disable access to any content for which we have not received adequate payment.</p>
+<p>9.We or our partners may offer gift and promotional codes to students. Certain codes may be redeemed for gift or promotional credits applied to your account, which then may be used to purchase eligible content on our platform, subject to the terms included with your codes. Other codes may be directly redeemable for specific content. Gift and promotional credits can’t be used for purchases in our mobile or Web applications. The detailed terms and conditions that shall apply to using the promotional codes are set out as follows:</p>
+<p>10.The details of the discount will be set out in the description of the specific promotion and the specific terms and conditions.</p>
+<p>11.Please note that our standard terms and conditions will apply even when using the promotional code and the Website terms of use for using our site also apply.</p>
+<p>12.By confirming using the promotional code you are accepting these terms and conditions. Any terms which you seek to impose in respect for Discount through this site will not form part of any contract between us. Please read these terms and conditions carefully before confirming. If you have any queries on these terms, please contact us before using a promotional code.</p>
+<p>13.To the extent that there is any conflict or inconsistency the terms and conditions we reserve the right to vary or discontinue the promotional code schemes at any time.</p>
+<p>14.You can only use our content for lawful purposes. You’re responsible for all the content that you post on our platform. You should keep the reviews, questions, posts, courses and other content you upload in line with the law, and respect the intellectual property rights of others. We can ban your account for repeated or major offenses. If you think someone is infringing copyright on our platform, let us know.</p>
+<p>15.You may not access or use the Services or create an account for unlawful purposes. Your use of the Services and behavior on our platform must comply with applicable local or national laws or regulations of your country. You are solely responsible for the knowledge of and compliance with such laws and regulations that are applicable to you.</p>
+<p>16.If we are put on notice that your course or content violates the law or the rights of others (for example, if it is established that it violates intellectual property or image rights of others, or is about an illegal activity), if we discover that your content or behavior violates our guidelines, or if we believe your content or behavior is unlawful, inappropriate, or objectionable (for example if you impersonate someone else), we may remove your content from our platform.</p>
+<p>17.We have discretion in enforcing these guidelines. We may restrict or terminate your permission to use our platform and Services or ban your account at any time, with or without notice, for any or no reason, including for any violation of these Terms, if you fail to pay any fees when due, for fraudulent chargeback requests, upon the request of law enforcement or government agencies, for extended periods of inactivity, for unexpected technical issues or problems, if we suspect that you engage in fraudulent or illegal activities, or for any other reason in our sole discretion. Upon any such termination we may delete your account and content, and we may prevent you from further access to the platforms and use of our Services. Your content may still be available on the platforms even if your account is terminated or suspended. You agree that we will have no liability to you or any third party for termination of your account, removal of your content, or blocking of your access to our platforms and services.</p>
+<p>18.If a user has published content that infringes your copyright or trademark rights, please let us know.</p>
+<p>19.You retain ownership of content you post to our platform, including your courses. We are allowed to share your content to anyone through any media, including promoting it via advertising on other websites.</p>
+<p>20.The content you post remains yours. By posting content, you allow us to reuse and share it but you do not lose any ownership rights you may have over your content.</p>
+<p>21.When you post content, comments, questions, reviews, and when you submit to us ideas and suggestions for new features or improvements, you authorize us to use and share this content with anyone, distribute it and promote it on any platform and in any media, and to make modifications or edits to it as we see fit. By submitting or posting content on or through the platforms, you grant us a worldwide, non-exclusive, royalty-free license (with the right to sublicense) to use, copy, reproduce, process, adapt, modify, publish, transmit, display, and distribute your content (including your name and image) in any and all media or distribution methods (existing now or later developed). This includes making your content available to other companies, organizations, or individuals who partner with us for the syndication, broadcast, distribution, or publication of content on other media, as well as using your content for marketing purposes. You also waive any rights of privacy, publicity, or other rights of a similar nature applicable to all these uses, to the extent permissible under applicable law. You represent and warrant that you have all the rights, power, and authority necessary to authorize us to use any content that you submit. You also agree to all such uses of your content with no compensation paid to you.</p>
+<p>22.When you interact directly with a student, you must be careful about the types of personal information that you share. While we restrict the types of information instructors may request from students, we do not control what students and instructors do with the information they obtain from other users on the platform. You should not share your email or other personal information about you for your safety.</p>
+<p>23.When you use our Services, you will find links to other websites that we don’t own or control. We are not responsible for the content or any other aspect of these third-party sites, including their collection of information about you. You should also read their terms and conditions and privacy policies.</p>
+<p>24.We own our platform and Services, including the website, present or future apps and services, and things like our logos, API, code, and content created by our employees. You must not tamper with those or use them without authorization.</p>
+<p>25.All right, title, and interest in and to our platform and Services, including our website, our existing or future applications, our APIs, databases, and the content our employees or partners submit or provide through our Services (but excluding content provided by instructors and students) are and will remain the exclusive property of ours and its licensors. Nothing gives you a right to use our name or any of our trademarks, logos, domain names, and other distinctive brand features. Any feedback, comments, or suggestions you may provide regarding us or the Services is entirely voluntary and we will be free to use such feedback, comments, or suggestions as we see fit and without any obligation to you.</p>
+<p>26.You may not do any of the following while accessing or using our platform and Services:</p>
+<p>access, tamper with, or use non-public areas of the platform (including content storage), our computer systems, or the technical delivery systems of our service providers.</p>
+<p>disable, interfere with, or try to circumvent any of the features of the platforms related to security or probe, scan, or test the vulnerability of any of our systems.</p>
+<p>copy, modify, create a derivative work of, reverse engineer, reverse assemble, or otherwise attempt to discover any source code of or content on our platform or Services.
+</p>
+
+<footer class="footer-distributed">
+<div class="footer-left">
+<h3>Contact Us</h3>
+<div>
+  <i class="fa fa-phone"></i>
+  <p>+91 9876543210</p>
+</div>
+<div>
+  <i class="fa fa-envelope"></i>
+  <p>artsylens@gmail.com</p>
+</div>
+</div>
+<div class="footer-right">
+  <h3>Social Media</h3>
+  <a class="fa fa-facebook-official"></a>
+  <a class="fa fa-instagram"></a>
+  <a class="fa fa-twitter"></a>
+  <a class="fa fa-whatsapp"></a>
+  <a class="fa fa-pinterest-p"></a>
+  <a class="fa fa-linkedin"></a>
+</div>
+</footer>
+</body>
+</html>
